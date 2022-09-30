@@ -12,6 +12,11 @@ while (P^2)<=N
     L=setdiff(L,L2);
     P=P+1;
 end
+disp(L);
+disp("L1");
+disp(L1);
+disp("L2");
+disp(L2);
 end
 
   
