@@ -1,0 +1,15 @@
+This folder contains soutions to Programming Assignment 1
+
+**PROBLEM 1**
+Euler’s sieve is a souped-up version of the sieve of Eratosthenes, which finds the prime numbers. It works
+as follows:
+A. Write a Matlab function EulerSieve1(N) which constructs the Euler sieve, implementing L, L1, L2 as arrays of integers, as above.
+
+B. Write a Matlab function EulerSieve2(N) which constructs the Euler sieve, implementing L, L1, and L2 as Boolean arrays, where L[I] = 1 if I is currently in the set L. 
+
+**PROBLEM 2**
+A. Assume that the polygon is represented by two vectors: Px, the array of x-coordinates and Py, the array
+of y-coordinates. Write a Matlab function [Qx,Qy]=ConnectMidpoints(P) that, given a polygon Px,Py constructs the coordinates of the midpoints of P in sequence
+
+B. Write a Matlab function ConvergingPolygons(P,N) which takes as input a polygon P and a number and draws pictures of the first N polygons in this sequence, starting with P. As in the pictures on the
+next page, it should alternate pictures that show the polygon with pictures that show the polygon and the midpoints.
