@@ -27,4 +27,9 @@ while (P^2)<=N
             break
         end
     end
+disp(L);
+disp("L1");
+disp(L1);
+disp("L2");
+disp(L2);
 end
