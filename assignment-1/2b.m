@@ -1,6 +1,6 @@
 function ConvertingPolygon(Px,Py,n)
 c=1;
-while(c<=n)
+while(c<=n*2)
     [Px,Py]=graph(Px,Py,c);
     c=c+2;
 end
