@@ -1,4 +1,4 @@
-function [Qx,Qy]=ConnectMidPoints(P) %assuming the polygon matrix contaiins Px and Py row wise i.e. for the given example [0, 2, 4, -2, 6;0, 8, 0, 6, 6]
+function [Qx,Qy]=ConnectMidPoints(P)     %assuming the polygon matrix contaiins Px and Py row wise i.e. for the given example [0, 2, 4, -2, 6;0, 8, 0, 6, 6]
     n = length(P);
     Qx = zeros(1,n);
     Qy = zeros(1,n);
