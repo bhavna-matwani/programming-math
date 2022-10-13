@@ -1,3 +1,8 @@
+%Function Call
+%PA = [0;1];
+%PB = [4,1,-3; 4,0,1];
+%ForceMatrix(PA,PB)
+
 function F=ForceMatrix(PA,PB)
 [~,cols] = size(PB);
 F = zeros(2,cols);
@@ -7,7 +12,4 @@ F = zeros(2,cols);
     end
 end
 
-%Function Call
-%PA = [0;1];
-%PB = [4,1,-3; 4,0,1];
-%ForceMatrix(PA,PB)
+
