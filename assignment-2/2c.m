@@ -38,7 +38,7 @@ B = TF(:,1);
 for i = 2:n
     F=ForceMatrix(PA(:,i),PB);
     A = [A;F];
-    B = [B;TF(:,2)];
+    B = [B;TF(:,i)];
 end
     C = A\B;
 end
