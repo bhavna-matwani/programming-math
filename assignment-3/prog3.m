@@ -77,13 +77,13 @@ if (isequal(P,cube) || isequal(P,box) || isequal(P,frustum))
     a2 = mat(:,4*k+1)-mat(:,k*4+2);
     a = cross(a1,a2);
     if(a(3,1)<0) 
-        edge1 = abs(mat(1:3,k*4+1) - mat(1:3,k*4+2));
+        edge1 = (mat(1:3,k*4+1) - mat(1:3,k*4+2));
         edge1 = edge1.';
-        edge2 = abs(mat(1:3,k*4+2) - mat(1:3,k*4+3));
+        edge2 = (mat(1:3,k*4+2) - mat(1:3,k*4+3));
         edge2 = edge2.';
-        edge3 = abs(mat(1:3,k*4+3) - mat(1:3,k*4+4));
+        edge3 = (mat(1:3,k*4+3) - mat(1:3,k*4+4));
         edge3 = edge3.';
-        edge4 = abs(mat(1:3,k*4+4) - mat(1:3,k*4+1));
+        edge4 = (mat(1:3,k*4+4) - mat(1:3,k*4+1));
         edge4 = edge4.';
 
         X(1,1) = mat(1,k*4+1);
@@ -140,11 +140,11 @@ if (isequal(P,octahedron))
     a2 = mat(:,3*k+1)-mat(:,k*3+2);
     a = cross(a1,a2);
     if(a(3,1)<0) 
-        edge1 = abs(mat(1:3,k*3+1) - mat(1:3,k*3+2));
+        edge1 = (mat(1:3,k*3+1) - mat(1:3,k*3+2));
         edge1 = edge1.';
-        edge2 = abs(mat(1:3,k*3+2) - mat(1:3,k*3+3));
+        edge2 = (mat(1:3,k*3+2) - mat(1:3,k*3+3));
         edge2 = edge2.';
-        edge3 = abs(mat(1:3,k*3+3) - mat(1:3,k*3+1));
+        edge3 = (mat(1:3,k*3+3) - mat(1:3,k*3+1));
         edge3 = edge3.';
 
         X(1,1) = mat(1,k*3+1);
@@ -197,11 +197,11 @@ if (isequal(P,pyramid))
         a2 = mat(:,3*k+1)-mat(:,k*3+2);
         a = cross(a1,a2);
         if(a(3,1)<0 && k<e) 
-            edge1 = abs(mat(1:3,k*3+1) - mat(1:3,k*3+2));
+            edge1 = (mat(1:3,k*3+1) - mat(1:3,k*3+2));
             edge1 = edge1.';
-            edge2 = abs(mat(1:3,k*3+2) - mat(1:3,k*3+3));
+            edge2 = (mat(1:3,k*3+2) - mat(1:3,k*3+3));
             edge2 = edge2.';
-            edge3 = abs(mat(1:3,k*3+3) - mat(1:3,k*3+1));
+            edge3 = (mat(1:3,k*3+3) - mat(1:3,k*3+1));
             edge3 = edge3.';
 
             X(1,1) = mat(1,k*3+1);
@@ -243,7 +243,7 @@ if (isequal(P,pyramid))
         hold on
 
         elseif(a(3,1)<0 && k==e)
-            edge4 = abs(mat(1:3,k*3+4) - mat(1:3,k*3+1));
+            edge4 = (mat(1:3,k*3+4) - mat(1:3,k*3+1));
             edge4 = edge4.';
             X(1,1) = mat(1,k*3+1);
             X(1,2) = mat(1,k*3+2);
